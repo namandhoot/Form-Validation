@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #4a4e69;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 24px;
+    color: #4a4e69;
+    font-weight: 300;
+}
+
+/* Form Container */
+.container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4a4e69;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #4a4e69;
+    background: #f7f7f7;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #ffafbd;
+    background: #ffffff;
+    outline: none;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+form button {
+    width: 100%;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: #ffffff;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ffc3a0, #ffafbd);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #4a4e69;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+}
